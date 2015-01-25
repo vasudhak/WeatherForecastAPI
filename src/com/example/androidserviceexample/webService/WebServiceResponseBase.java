@@ -11,7 +11,7 @@ public class WebServiceResponseBase
 	 */
 	public WebServiceResponseBase()
     {
-		
+		//create a default response base model object if any required.
     }
 	
 	/**
@@ -19,12 +19,6 @@ public class WebServiceResponseBase
 	 */
     public String ServiceName;
     public WebServiceException webServiceException;
-    //public Integer mFault;
-    
-    /*
-     * If the request resulted in an error, this field will be populated with the details of the error.
-	 * If the request was successful, this field will be null.
-     */
    
     public WebServiceException getException()
     {
@@ -36,8 +30,6 @@ public class WebServiceResponseBase
     {
         StringBuilder builder = new StringBuilder();
         builder.append("ServiceName: " + ServiceName + "\n");
-      
-
         if(getException() != null)
         {
             builder.append(getException().toString());

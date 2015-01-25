@@ -44,11 +44,7 @@ public class WebServiceRequestBase
      */
     public String GetRequestUrl(){return "";};
     
-    /**
-     * City Name for which the request has to be made.
-     * */
-    
-   // public String cityName;
+   
     public String url;
      
 }

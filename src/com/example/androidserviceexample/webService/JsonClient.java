@@ -12,7 +12,6 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 
-import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -38,7 +37,7 @@ public abstract class JsonClient<R extends WebServiceRequestBase, S extends WebS
   
     private R mRequest;
     protected String mHeaderString = "";
-    public JsonClient(final R request, Context context)
+    public JsonClient(final R request)
     {
         mRequest = request;
       

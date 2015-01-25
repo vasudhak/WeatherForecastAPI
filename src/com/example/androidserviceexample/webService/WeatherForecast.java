@@ -1,5 +1,7 @@
 package com.example.androidserviceexample.webService;
 
+import com.example.androidserviceexample.deligate.PresenterJsonClientDelegate;
+
 
 
 public class WeatherForecast {
@@ -29,6 +31,14 @@ public class WeatherForecast {
 	    }
 	    
 	    public String cityName;
+	}
+	
+	
+	@SuppressWarnings({ "unused" })	
+	private void getWeatherForecast(WeatherForecast.Request request, PresenterJsonClientDelegate<WeatherForecast.Response> delegate)
+	{
+		//JsonClient client= new JsonClient<WeatherForecast.Request, WeatherForecast.Response>(request);
+		//  client.sendRequestAsync(delegate);
 	}
 	
 	public class Response extends WebServiceResponseBase
