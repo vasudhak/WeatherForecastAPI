@@ -1,2 +1,3 @@
 # WeatherForecastAPI
-This project will have a list of cities which has the ability to add or remove the items form list.Upon clicking any city from list it makes an API call to (http://openweathermap.org/current) and display the result.
+This is a list-based application where the list will be pre-populated with at least 3 different entries. There is an 'Add' button that allows the user to add additional city name into the list which fetches weather information from a weather service API (http://openweathermap.org/api). Tapping on a list item will make an API call to a weather service of your choice and display the weather data in a detail activity.
+
