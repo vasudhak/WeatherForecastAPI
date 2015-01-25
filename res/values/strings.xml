@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidServiceExample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="fjd">#ff00ff</color>
+
+    <string name="title_activity_list">ListActivity</string>
+    <string-array name="cities">
+        <item >Washington</item>
+        <item >Texas</item>
+        <item >New York</item>
+        <item >California</item>
+    </string-array>
+    
+
+</resources>
