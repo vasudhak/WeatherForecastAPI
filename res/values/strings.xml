@@ -5,9 +5,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <color name="fjd">#ff00ff</color>
+    
 
     <string name="title_activity_list">ListActivity</string>
+    <string name="webServiceURL">http://api.openweathermap.org/data/2.5/weather?q=</string>
     <string-array name="cities">
         <item >Washington</item>
         <item >Texas</item>

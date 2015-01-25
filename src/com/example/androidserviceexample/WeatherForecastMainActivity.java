@@ -36,7 +36,7 @@ public class WeatherForecastMainActivity extends Activity {
 		textview =  (TextView) findViewById(R.id.textview);
 		mReceiver = new MyReceiver();
 		intent = new Intent(WeatherForecastMainActivity.this,WeatherForecastIntentService.class);
-		intent.putExtra("URL", getServiceURl("http://api.openweathermap.org/data/2.5/weather?q=",city));
+		intent.putExtra("URL", getServiceURl(getResources().getString(R.string.webServiceURL),city));
 		intent.putExtra("Action", "MainActivity");
 		startService(intent);
 		
