@@ -2,19 +2,19 @@ package com.example.androidserviceexample.models;
 
 public class Wind {
 
-int speed;
+float speed;
 float gust;
-int deg;
+float deg;
 /**
  * @return the speed
  */
-public int getSpeed() {
+public float getSpeed() {
 	return speed;
 }
 /**
  * @param speed the speed to set
  */
-public void setSpeed(int speed) {
+public void setSpeed(float speed) {
 	this.speed = speed;
 }
 /**
@@ -32,13 +32,13 @@ public void setGust(float gust) {
 /**
  * @return the deg
  */
-public int getDeg() {
+public float getDeg() {
 	return deg;
 }
 /**
  * @param deg the deg to set
  */
-public void setDeg(int deg) {
+public void setDeg(float deg) {
 	this.deg = deg;
 }
 

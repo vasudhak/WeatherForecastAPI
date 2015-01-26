@@ -71,6 +71,10 @@ public class ListActivity extends Activity {
 					    {
 					    	cityList.add(userInput.getText().toString());
 					    	stringAdapter.notifyDataSetChanged();
+					    	Intent intent=new Intent(getApplicationContext(),WeatherForecastMainActivity.class);
+							Log.i("CityName","name passed in listactivity"+userInput.getText().toString());							
+							intent.putExtra("cityName", userInput.getText().toString());
+							startActivity(intent);
 					    }
 					  })
 					.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -101,7 +105,7 @@ public class ListActivity extends Activity {
 			}
 		});
 		citiesListView.setLongClickable(true);
-		//set the long cick listener to delete a city from list.
+		//set the long click listener to delete a city from list.
 		citiesListView.setOnItemLongClickListener(new OnItemLongClickListener() {
 
 			@Override
@@ -115,6 +119,7 @@ public class ListActivity extends Activity {
 				       public void onClick(DialogInterface dialog, int id) {
 				          cityList.remove(itemPosition);
 				          stringAdapter.notifyDataSetChanged();
+				          
 				       }
 				   })
 				   .setNegativeButton("No", new DialogInterface.OnClickListener() {
@@ -129,7 +134,9 @@ public class ListActivity extends Activity {
 			
 			}
 		});
-	}
-
+	}	
+		
+	
+		  
 
 }

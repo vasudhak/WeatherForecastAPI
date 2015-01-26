@@ -4,8 +4,12 @@
     <string name="app_name">AndroidServiceExample</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+	
+    <!--Weather Details Page 	-->
     
+     <string name="Pressure">Pressure</string>
+     <string name="Humidity">Humidity</string>
+	 <string name="Wind">wind</string>
 
     <string name="title_activity_list">ListActivity</string>
     <string name="webServiceURL">http://api.openweathermap.org/data/2.5/weather?q=</string>

@@ -37,8 +37,8 @@ public class WeatherForecast {
 	@SuppressWarnings({ "unused" })	
 	private void getWeatherForecast(WeatherForecast.Request request, PresenterJsonClientDelegate<WeatherForecast.Response> delegate)
 	{
-		//JsonClient client= new JsonClient<WeatherForecast.Request, WeatherForecast.Response>(request);
-		//  client.sendRequestAsync(delegate);
+	 // JsonClient client= new JsonClient<WeatherForecast.Request, WeatherForecast.Response>(request);
+	 //  client.sendRequestAsync(delegate);
 	}
 	
 	public class Response extends WebServiceResponseBase

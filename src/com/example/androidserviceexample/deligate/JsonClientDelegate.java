@@ -7,7 +7,7 @@ import android.content.Context;
 import android.util.Log;
 
 /**
- * The JsonClientDelegate class is used as the base callback class for all CDWebServiceClient methods.
+ * The JsonClientDelegate class is used as the base callback class for all WebServiceClient methods.
  * This delegate will handle the deserialization of the response and error checking.  The lifecycle of the
  * methods are as follows:
  * <p>
