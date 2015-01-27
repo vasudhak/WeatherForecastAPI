@@ -30,7 +30,7 @@ import com.example.androidserviceexample.deligate.JsonClientDelegate;
 public abstract class JsonClient<R extends WebServiceRequestBase, S extends WebServiceResponseBase>
 {
   
-    protected static final String SERVICE_ENDPOINT = "/v5.5/SubscriberServiceJson.svc";
+   
     protected HttpPost mHttpPost;
     protected HttpGet mHttpGet;
     private JsonClientDelegate<S> mDelegate;
